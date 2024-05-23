@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('image/background/glass.png') no-repeat center center fixed;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+     /* background-color: rgba(255, 255, 255, 0.8);  */
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ffffff; /* White color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.header p {
+    font-size: 1.2em;
+  color: #f4f4f4; 
+  max-width: 600px;
+  margin: 0 auto 20px;
+  
+}
+
+.team-section {
+    text-align: center;
+}
+
+.styled-hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #6A1B9A, #f4f4f4);
+    margin: 40px 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.team-category {
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border: 1px solid rgba(6, 177, 235, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-category h3 {
+    font-size: 1.8em;
+    color:  #00796b; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.team-category p {
+    color: #333; /* Dark gray color for paragraphs */
+}
+
+ 
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    max-width: 100px; 
+    width: 100%;
+    height: auto; 
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.team-member p {
+    margin: 0;
+    font-size: 1em;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 40px);
+    }
+}
